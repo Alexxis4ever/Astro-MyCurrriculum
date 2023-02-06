@@ -1,0 +1,23 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+import '../styles/global.css'
+import HeaderHome from '../layouts/HeaderHome/HeaderHome.astro';
+import MainHome from '../layouts/MainHome/MainHome.astro';
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+
+		<HeaderHome />
+		
+		<MainHome />
+		
+	</body>
+</html>
